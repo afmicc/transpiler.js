@@ -6,7 +6,7 @@ The javascript transpiler transform all *.js* files code from src to lib folder,
 
 src/demo.js
 
-```
+```javascript
 const greetings = ['Welcome', 'Willkommen', 'Hey', 'Gruezi'];
 
 export function next() {
@@ -36,7 +36,7 @@ f1();
 
 lib/demo.js
 
-```
+```javascript
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -121,14 +121,14 @@ Where reference yours js files, also, you need to add a references to *polyfill.
 
 In the *.babelrc* file, can change the js compatibility, changing the target configuration:
 
-```
+```json
 "targets": {
         "browsers": ["last 1 versions"]
       },
 ```
 
 In the console, if search the output *Using targets* can see the compatibility of the new js files. For example, for the previous configuration:
-```
+```json
 Using targets:
 {
   "chrome": "64",
